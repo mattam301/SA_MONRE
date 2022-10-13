@@ -1,0 +1,2 @@
+1. tạo private key(openssh): ssh-keygen
+2. chuyển sang rsa: ssh-keygen -p -N "" -m pem -f C:\Users\admin/.ssh/id_rsa

@@ -1,0 +1,1 @@
+scp D:\pythonProject\pythonProject\o_nhiem_khong_khi.json thinhnd@118.68.218.104:/home/thinhnd/workspace/sentiment_analysis/data
