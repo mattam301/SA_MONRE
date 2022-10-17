@@ -102,6 +102,14 @@ if __name__ == '__main__':
     # """
     # validate_sample(input, pickled_model, Tfidf_vect)
     df = pd.read_csv("Data/Data_dat_dai/unlabelled.csv")
+    print("Data reading completed")
+
+    df = df.sample(1000)
+    print("Data sampling completed")
+
     pred = predict_sample(df, pickled_model, Tfidf_vect)
+    print("Output predicted")
+
     df['label'] = pred
-    df.to_csv('auto_labelling.csv')
+    print("Start extracting file")
+    df.to_csv('auto_labelling.csv', encoding = 'utf-8-sig')
