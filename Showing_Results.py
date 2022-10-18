@@ -111,4 +111,4 @@ if __name__ == '__main__':
 
     df['label'] = pred
     print("Start extracting file")
-    df.to_csv('auto_labelling_full_lgbm.csv', encoding = 'utf-8-sig')
+    df.to_csv('Data/Result/auto_labelling_full_lgbm.csv', encoding = 'utf-8-sig')
