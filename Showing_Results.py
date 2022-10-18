@@ -103,7 +103,7 @@ if __name__ == '__main__':
     df = pd.read_csv("Data/Data_dat_dai/unlabelled.csv")
     print("Data reading completed")
 
-    df = df.sample(500)
+    # df = df.sample(500)
     print("Data sampling completed")
 
     pred = predict_sample(df, pickled_model, Tfidf_vect)
